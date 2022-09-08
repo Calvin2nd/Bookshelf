@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
           addReadToCompleted(toreadObject.id);
         });
               
-        container.append(doneButton);
+        book_list.append(doneButton);
            
         const trashButton = document.createElement('button');
         trashButton.classList.add('trash-button');
