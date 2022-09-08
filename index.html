@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini BookShelf</title>
+    <link rel = "stylesheet" href = "style/style.css">
+  </head>
+
+  <body>
+    <header class="header_content">
+      <div>
+        <h1>Mini BookShelf by CalvinStanley</h1>
+        <p>Enjoy My Mini Bookshelf App</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="input_section">
+        <h2>Masukkan Buku Baru</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul Buku : </label>
+            <input id="inputBookTitle" type="text" required>
+          </div>
+
+          <div class="input">
+            <label for="inputBookAuthor">Penulis Buku : </label>
+            <input id="inputBookAuthor" type="text" required>
+          </div>
+          
+          <div class="input">
+            <label for="inputBookYear">Tahun Terbit : </label>
+            <input id="inputBookYear" type="number" required>
+          </div>
+
+          <div class="input_inline">
+            <label for="inputBookIsComplete"><i>Selesai dibaca</i></label>
+            <input id="inputBookIsComplete" type="checkbox">
+          </div>
+
+          <button class="book_submit" id="bookSubmit" type="submit">Masukkan Buku ke rak <span><b>(Belum selesai dibaca)</b></span></button>
+        </form>
+      </section>
+
+      <section class="search_section">
+        <h2 class="h2_search">Cari Buku Anda</h2>
+        <form id="searchBook">
+          <label for="searchBookTitle">Judul Buku : </label>
+          <input id="searchBookTitle" type="text">
+          <button id="searchSubmit" type="submit">Cari</button>
+        </form>
+      </section>
+
+      <section class="book_shelf">
+        <h2>Belum selesai dibaca</h2>
+        
+        <div id="incompleteBookshelfList" class="book_list">
+    <!--      <article class="book_item">-->
+    <!--        <h3>Book Title</h3>-->
+    <!--        <p>Penulis: John Doe</p>-->
+    <!--        <p>Tahun: 2002</p>-->
+    <!--    -->
+    <!--        <div class="action">-->
+    <!--          <button class="green">Selesai dibaca</button>-->
+    <!--          <button class="red">Hapus buku</button>-->
+    <!--        </div>-->
+    <!--      </article>-->
+        </div>
+      </section>
+      
+      <section class="book_shelf">
+        <h2>Selesai dibaca</h2>
+        
+        <div id="completeBookshelfList" class="book_list">
+    <!--      <article class="book_item">-->
+    <!--        <h3>Book Title</h3>-->
+    <!--        <p>Penulis: John Doe</p>-->
+    <!--        <p>Tahun: 2002</p>-->
+    <!--        -->
+    <!--        <div class="action">-->
+    <!--          <button class="green">Belum selesai di Baca</button>-->
+    <!--          <button class="red">Hapus buku</button>-->
+    <!--        </div>-->
+    <!--      </article>-->
+        </div>
+      </section>
+    </main>
+
+    <script src ="javascript/javascript.js"></script>
+  </body>
+</html>
